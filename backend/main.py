@@ -52,7 +52,3 @@ async def get_status(task_id: str):
 @app.get("/api/contracts/{id}")
 async def get_contract(id: str):
     return {"id": id, "title": "示例"}
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=10000)

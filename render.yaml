@@ -1,9 +1,5 @@
 services:
   - type: web
     name: contract-analysis-system
-    runtime: python
-    python:
-      version: 3.11.0
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
-    rootDir: backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile

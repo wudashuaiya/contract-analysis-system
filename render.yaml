@@ -1,5 +1,0 @@
-services:
-  - type: web
-    name: contract-analysis-system
-    runtime: docker
-    dockerfilePath: ./Dockerfile
